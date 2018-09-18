@@ -25,7 +25,7 @@
 
 **2)구조적 패턴**
 
--Adapter패턴
+-[Adapter패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Adapter_Pattern/Image/Object_Adapter.PNG?raw=true)
 
 -Bridge 패턴
 
@@ -41,7 +41,7 @@
 
 **3)행위패턴**
 
--Iterator 패턴
+-[Iterator 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Behavioral_Pattern/Interator_Pattern/Interator%20Pattern.md)
 
 -Template Method 패턴
 
