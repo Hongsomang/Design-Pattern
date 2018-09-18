@@ -7,7 +7,7 @@
 
 -오랫동안 많은 사람들에 의해 좋다고 검증된 프로그래밍 패턴.
 
- 클래스 구조를 갖는 프로그래밍을 하다보면 클래스 간에 다양한 방법으로 객체가 생성되면 관계에 따라 여러가지 형태의 행동들이 나타난다.  그런데  기초 설계가 제대로 되어있지 않은 상태로 프로그래밍이 시작된다면 얼마 못가 클래스 관계가 꼬이게 된다. 
+-**사용하는 이유? **클래스 구조를 갖는 프로그래밍을 하다보면 클래스 간에 다양한 방법으로 객체가 생성되면 관계에 따라 여러가지 형태의 행동들이 나타난다.  그런데  기초 설계가 제대로 되어있지 않은 상태로 프로그래밍이 시작된다면 얼마 못가 클래스 관계가 꼬이게 된다. 
 
 #### 2.디자인 패턴 종류
 
@@ -25,7 +25,7 @@
 
 **2)구조적 패턴**
 
--[Adapter패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Adapter_Pattern/Image/Object_Adapter.PNG?raw=true)
+-[Adapter패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Adapter_Pattern/Adapter%20Pattern.md)
 
 -Bridge 패턴
 
