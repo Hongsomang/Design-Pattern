@@ -15,9 +15,9 @@
 
 -Factory Method 패턴
 
--Singleton 패턴
+-[Singleton 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Creation_Pattern/Singleton_Pattern/Singleton%20Pattern.md)
 
--Prototype 패턴
+-[Prototype 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Creation_Pattern/Prototype_Pattern/Prototype%20Pattern.md)
 
 -Builder 패턴
 
