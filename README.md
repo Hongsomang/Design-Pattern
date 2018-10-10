@@ -21,7 +21,7 @@
 
 -Builder 패턴
 
--Abstarct Factroy 패턴
+-Abstract Factory 패턴
 
 **2)구조적 패턴**
 
