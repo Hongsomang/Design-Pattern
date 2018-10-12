@@ -32,5 +32,124 @@
 
   -각 '동물'이라는 클래스와 이 동물 클래스가 가질 수 있는 '사냥방법'을 Bridge 패턴을 적용하여 각각 분리하여 설계
 
+  ![image](https://raw.githubusercontent.com/Hongsomang/Design-Pattern/master/Structral%20Pattern/Bridge_Pattern/Image/%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B5%AC%EC%A1%B0%EB%8F%84.PNG)
+
   ​
+
++ Animal ->기능 계층의 최상위 클래스. 구현 부분에 해당하는 클래스의 인스턴스를 가지고 해당 인스턴스를 통해 구현부분의 메서드를 호출
++ Bird,Tiger->기능 계층에서 새로운 부분을 확장한 클래스
++ Hunting_Handler-> Animal의 기능을 구현하기 위한 인터페이스 정의
++ Hunting_Method1,Hunting_Method2-> 실제 기능 구현
+
+```
+public interface Hunting_Handler{
+  public void Find_Quarry();
+  public void Detected_Quarry();
+  public void attack();
+}
+```
+
+동물이 가질 수 있는 '사냥 방식'들이 가져야 할 공통 인터페이스를  정의하고 있다.
+
+```
+public class Hunting_Method1 implements Hunting_Handler{
+  public void Find_Quarry(){
+    System.out.println("물 위에서 찾는다");
+  }
+  public void Detected_Quarry(){
+  	System.out.println("물고기 발견");
+  }
+  public void attack(){
+    System.out.println("낚아챈다.");
+  }
+}
+```
+
+```
+public class Hunting_Method2 implemets Hunting_Handler{
+  public void Find_Quarry(){
+    System.out.pirintln("지상에서 찾는다.");
+  }
+  public void Detected_Quarry(){
+	System.out.println("노루 발견");
+  }
+  public void attack(){
+    System.out.println("물어뜯는다");
+  }
+}
+```
+
+Hunting_Handler인터페이스를 상속받아 실제 기능에 해당하는 부문을 구현합니다.
+
+```
+public class Animal{
+  private Hunting_Handlr hunting;
+  public Animal(Huntin_Handler hunting){
+    this.hunting=hunting;
+  }
+  public void Find_Quarry(){
+    hunting.Find_Quarry();
+  }
+  public void Detected_Quarry(){
+    hunting.Detected_Quarry();
+  }
+  
+  public void attack(){
+	hunting.attack();
+  }
+  public void hunt(){
+    Find_Quarry();
+    Detected_Quarry();
+    attack();
+  }
+}
+```
+
+기능 부문에 해당되는 최상위 클래스이다. Hunting_Handler의 인스턴스를 가지고 각각의 Hunting_Handler를 상속받아 구현하고 있는 메서드를 호출하고 있다.
+
+```
+public class Tiger extends Animal{
+  pulblic Tiger(Hunting_Handler hunting){
+    super(hunting);
+  }
+  public void hunt(){
+    System.out.println("호랑이의 사냥방식");
+    Find_Quarry();
+    Detected_Quarry();
+    attack();
+  }
+}
+```
+
+```
+public class Bird extends Animal{
+  public Bird(Hunting_Handler hunting){
+    super(hunting);
+  }
+  pulbilc void hunting(){
+    System.out.println("새의 사냥방식");
+    Find_Quarry();
+    Detected_Quarry();
+    attack();
+  }
+}
+```
+
+Animal를 확장한 클래스이다. 
+
+```
+public class Main{
+  public static void main(String argsp[]){
+    Animal tiger=new Tiger(new Hunting_Method2());
+    Animal bird=new Bird(new Hunting_Method1());
+    tiger.hunt();
+    System.out.println("================");
+    bird.hunt();
+  }
+}
+```
+
+실제 메인에서 동물 클래스를 생성하고 각각 다른 사냥 방식을 채택하는 모습이다.
+
+
 
