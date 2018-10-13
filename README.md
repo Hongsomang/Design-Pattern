@@ -19,15 +19,15 @@
 
 -[Prototype 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Creation_Pattern/Prototype_Pattern/Prototype%20Pattern.md)
 
--Builder 패턴
+-[Builder 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Creation_Pattern/Builder_Pattern/Builder%20Pattern.md)
 
--Abstract Factory 패턴
+-[Abstract Factory 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Creation_Pattern/Abstract_Factory_Pattern/Abstract%20Factory%20Pattern.md)
 
 **2)구조적 패턴**
 
 -[Adapter패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Adapter_Pattern/Adapter%20Pattern.md)
 
--Bridge 패턴
+-[Bridge 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Bridge_Pattern/Bridge%20Pattern.md)
 
 -Composite 패턴
 
