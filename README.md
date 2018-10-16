@@ -29,9 +29,9 @@
 
 -[Bridge 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Bridge_Pattern/Bridge%20Pattern.md)
 
--Composite 패턴
+-[Composite 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Composite_Pattern/Composite%20Pattern.md)
 
--Decorator  패턴
+-[Decorator  패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Structral%20Pattern/Decorator_Pattern/Decorator%20Pattern.md)
 
 -Facade 패턴
 
@@ -45,7 +45,7 @@
 
 -Template Method 패턴
 
--Strategy 패턴
+-[Strategy 패턴](https://github.com/Hongsomang/Design-Pattern/blob/master/Behavioral_Pattern/Strategy_Pattern/Strategy%20Pattern.md)
 
 -Visitor 패턴
 
